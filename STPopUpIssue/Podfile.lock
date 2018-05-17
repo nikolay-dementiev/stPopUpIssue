@@ -1,0 +1,16 @@
+PODS:
+  - STPopup (1.8.3)
+
+DEPENDENCIES:
+  - STPopup (~> 1.8.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - STPopup
+
+SPEC CHECKSUMS:
+  STPopup: da1167250a01584af7bcccb898653185f223ec46
+
+PODFILE CHECKSUM: c280f3e3479964ed3ef652f1757a7426673d80cc
+
+COCOAPODS: 1.5.2
