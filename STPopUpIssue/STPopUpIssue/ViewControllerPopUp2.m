@@ -7,6 +7,7 @@
 //
 
 #import "ViewControllerPopUp2.h"
+#import "TitleLabelSTPopUp.h"
 
 @interface ViewControllerPopUp2 ()
 
@@ -35,7 +36,8 @@
 }
 
 - (void)commonInit {
-    self.title = @"View Controller 2";
+//    self.title = @"View Controller 2";
+    [self.navigationItem setTitleView:[[TitleLabelSTPopUp alloc] initWithText:@"View Controller 2"]];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(backBtnDidTap)];
     
     CGSize mainWindowSize = [UIScreen mainScreen].bounds.size;
@@ -48,6 +50,5 @@
 - (void)backBtnDidTap {
     [self.popupController popViewControllerAnimated:YES];
 }
-
 
 @end

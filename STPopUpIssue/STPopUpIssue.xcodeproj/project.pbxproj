@@ -15,6 +15,7 @@
 		959E98E320ADC2C00068555E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 959E98E220ADC2C00068555E /* main.m */; };
 		959E98EB20ADD2D50068555E /* ViewControllerPopUp1.m in Sources */ = {isa = PBXBuildFile; fileRef = 959E98EA20ADD2D50068555E /* ViewControllerPopUp1.m */; };
 		959E98EE20ADD2EA0068555E /* ViewControllerPopUp2.m in Sources */ = {isa = PBXBuildFile; fileRef = 959E98ED20ADD2EA0068555E /* ViewControllerPopUp2.m */; };
+		959E98F120AEC8620068555E /* TitleLabelSTPopUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 959E98F020AEC8610068555E /* TitleLabelSTPopUp.m */; };
 		D7C4C1B0CF4B1B285B51A351 /* Pods_STPopUpIssue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B31212EFE8B6A34D526800 /* Pods_STPopUpIssue.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,8 @@
 		959E98EA20ADD2D50068555E /* ViewControllerPopUp1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPopUp1.m; sourceTree = "<group>"; };
 		959E98EC20ADD2EA0068555E /* ViewControllerPopUp2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerPopUp2.h; sourceTree = "<group>"; };
 		959E98ED20ADD2EA0068555E /* ViewControllerPopUp2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPopUp2.m; sourceTree = "<group>"; };
+		959E98EF20AEC8610068555E /* TitleLabelSTPopUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleLabelSTPopUp.h; sourceTree = "<group>"; };
+		959E98F020AEC8610068555E /* TitleLabelSTPopUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleLabelSTPopUp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				959E98EA20ADD2D50068555E /* ViewControllerPopUp1.m */,
 				959E98EC20ADD2EA0068555E /* ViewControllerPopUp2.h */,
 				959E98ED20ADD2EA0068555E /* ViewControllerPopUp2.m */,
+				959E98EF20AEC8610068555E /* TitleLabelSTPopUp.h */,
+				959E98F020AEC8610068555E /* TitleLabelSTPopUp.m */,
 				959E98D920ADC2BA0068555E /* Main.storyboard */,
 				959E98DC20ADC2C00068555E /* Assets.xcassets */,
 				959E98DE20ADC2C00068555E /* LaunchScreen.storyboard */,
@@ -218,6 +223,7 @@
 			files = (
 				959E98D820ADC2BA0068555E /* ViewController.m in Sources */,
 				959E98EB20ADD2D50068555E /* ViewControllerPopUp1.m in Sources */,
+				959E98F120AEC8620068555E /* TitleLabelSTPopUp.m in Sources */,
 				959E98E320ADC2C00068555E /* main.m in Sources */,
 				959E98D520ADC2BA0068555E /* AppDelegate.m in Sources */,
 				959E98EE20ADD2EA0068555E /* ViewControllerPopUp2.m in Sources */,
