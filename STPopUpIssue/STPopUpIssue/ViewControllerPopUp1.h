@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "STPopup.h"
+#import <STPopup/STPopup.h>
 
 @interface ViewControllerPopUp1 : UIViewController
 

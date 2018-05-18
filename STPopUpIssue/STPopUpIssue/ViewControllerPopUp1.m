@@ -19,19 +19,34 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        [self commonInit];
+    }
+    return self;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (instancetype)init
+{
+    if (self = [super init]) {
+        [self commonInit];
+    }
+    return self;
 }
-*/
+
+- (void)commonInit {
+    self.title = @"View Controller 1";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(nextBtnDidTap)];
+    
+    CGSize mainWindowSize = [UIScreen mainScreen].bounds.size;
+    CGFloat width = mainWindowSize.width;
+    CGFloat height = 300;
+    self.contentSizeInPopup = CGSizeMake(width, height);
+    self.landscapeContentSizeInPopup = CGSizeMake(height, width);
+}
+
+- (void)nextBtnDidTap {
+    [self performSegueWithIdentifier:@"showPopUpVC2" sender:self];
+}
 
 @end

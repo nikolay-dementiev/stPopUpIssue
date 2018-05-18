@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "STPopup.h"
+#import <STPopup/STPopup.h>
+#import "ViewControllerPopUp1.h"
 
 
 @interface ViewController ()
@@ -21,7 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     [self setupSTPopupNavigationBarSettings];
 }
@@ -33,9 +33,12 @@
     [STPopupNavigationBar appearance].barStyle = UIBarStyleDefault;
     [STPopupNavigationBar appearance].titleTextAttributes = @{ NSFontAttributeName: [UIFont systemFontOfSize:14],NSForegroundColorAttributeName: [UIColor blackColor] };
     
-    
     [[UIBarButtonItem appearanceWhenContainedIn:[STPopupNavigationBar class], nil] setTitleTextAttributes:@{ NSFontAttributeName:[UIFont systemFontOfSize:14], NSForegroundColorAttributeName: [UIColor redColor] } forState:UIControlStateNormal];
     
+}
+
+- (__kindof UIViewController *)inistantiatePopUpVC:(NSString *)vcName {
+    return [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:vcName];
 }
 
 - (void)presentPopUpVC:(ViewController *)wself rootVC:(UIViewController *)rootVC {
@@ -56,23 +59,9 @@
 }
 
 - (void)pressHandlerForButton {
-//    EDAPhoneCompositViewController *rootView;
-//    if (w_profile.phones.count > 0) {
-//        rootView = (EDAPhoneChoiceViewController *)[wself inistantiatePopUpVC:@"EDAPhoneChoiceViewController"];
-//    } else {
-//        rootView = (EDAPhoneChoiceNewViewController *)[wself inistantiatePopUpVC:@"EDAPhoneChoiceNewViewController"];
-//    }
-//
-//    rootView.profile = w_profile;
-//    __weak __typeof(rootView)weakRootView = rootView;
-//    weakRootView.saveHandler = ^(ProfilePhone *profilePhone, BOOL isNew) {
-//
-//        weakCellPhoneLogged.curPhone = profilePhone;
-//
-//        [wself updateCells];
-//    };
-//
-//    [wself presentPopUpVC:wself rootVC:rootView];
+    
+    ViewControllerPopUp1 *rootView = [self inistantiatePopUpVC:@"ViewControllerPopUp1"];
+    [self presentPopUpVC:self rootVC:rootView];
 }
 
 - (IBAction)showPopUpVcPressed:(UIButton *)sender {

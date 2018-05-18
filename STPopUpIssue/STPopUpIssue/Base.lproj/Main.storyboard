@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="-746" y="167"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Pop Up1-->
         <scene sceneID="y5r-QN-5lF">
             <objects>
-                <viewController id="TGt-64-BPM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerPopUp1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TGt-64-BPM" customClass="ViewControllerPopUp1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rg3-eq-Gxn"/>
                         <viewControllerLayoutGuide type="bottom" id="Ekw-q4-nW3"/>
@@ -54,14 +54,61 @@
                     <view key="view" contentMode="scaleToFill" id="yHT-mC-BXN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HI-g4-23N">
+                                <rect key="frame" x="170" y="139.5" width="34.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2HI-g4-23N" firstAttribute="centerX" secondItem="yHT-mC-BXN" secondAttribute="centerX" id="I76-bI-5Ql"/>
+                            <constraint firstItem="2HI-g4-23N" firstAttribute="centerY" secondItem="yHT-mC-BXN" secondAttribute="centerY" id="OjH-Rb-ngD"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="300"/>
+                    <connections>
+                        <segue destination="upB-bQ-9gI" kind="show" identifier="showPopUpVC2" id="9Ds-gL-6xN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="feN-Fc-ltR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="73" y="2"/>
+        </scene>
+        <!--View Controller Pop Up2-->
+        <scene sceneID="Xte-XU-nr1">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerPopUp2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="upB-bQ-9gI" customClass="ViewControllerPopUp2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y3Z-d4-Ueb"/>
+                        <viewControllerLayoutGuide type="bottom" id="FXt-FW-IWu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qSH-1F-NSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTH-Hn-nEb">
+                                <rect key="frame" x="168.5" y="140" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cTH-Hn-nEb" firstAttribute="centerY" secondItem="qSH-1F-NSZ" secondAttribute="centerY" id="PZA-yK-2IP"/>
+                            <constraint firstItem="cTH-Hn-nEb" firstAttribute="centerX" secondItem="qSH-1F-NSZ" secondAttribute="centerX" id="jcX-ig-fuE"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SAF-1Y-Hu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="2"/>
         </scene>
     </scenes>
 </document>
